@@ -1,0 +1,10 @@
+
+<button (click)="addItem('ok')">OK</button>
+<button (click)="addItem('not ok')">Not OK</button>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item.status }}
+    <button (click)="deleteItem(item.id)">Delete</button>
+  </li>
+</ul>
